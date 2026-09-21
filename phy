@@ -1,0 +1,70 @@
+{
+ "cells": [
+  {
+   "cell_type": "markdown",
+   "metadata": {},
+   "source": [
+    "# Calculadora de notas (plantilla)\n",
+    "\n",
+    "Completa cada TODO siguiendo los pasos del enunciado."
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "# Definir las puntuaciones de 5 estudiantes en un examen (valores entre 1 y 100)\n",
+    "puntuaciones = [85, 92, 78, 90, 88]\n",
+    "\n",
+    "# TODO: funcion calcular_promedio_puntuaciones(puntuaciones)\n",
+    "#       suma con un bucle for y divide entre el numero de estudiantes\n",
+    "def calcular_promedio_puntuaciones(lista_puntuaciones):\n",
+    "    suma_total = 0\n",
+    "    for puntuacion in lista_puntuaciones:\n",
+    "        suma_total += puntuacion\n",
+    "    return suma_total / len(lista_puntuaciones)\n",
+    "\n",
+    "# TODO: funcion calcular_puntuacion_maxima(puntuaciones)\n",
+    "#       recorre la lista comparando para encontrar la mas alta\n",
+    "def calcular_puntuacion_maxima(lista_puntuaciones):\n",
+    "    maxima = lista_puntuaciones[0]\n",
+    "    for puntuacion in lista_puntuaciones:\n",
+    "        if puntuacion > maxima:\n",
+    "            maxima = puntuacion\n",
+    "    return maxima\n",
+    "\n",
+    "# TODO: funcion calcular_total_puntuaciones(puntuaciones)\n",
+    "#       devuelve la suma total de las puntuaciones\n",
+    "def calcular_total_puntuaciones(lista_puntuaciones):\n",
+    "    total = 0\n",
+    "    for puntuacion in lista_puntuaciones:\n",
+    "        total += puntuacion\n",
+    "    return total\n",
+    "\n",
+    "# TODO: llama a las tres funciones con la lista e imprime los resultados\n",
+    "total = calcular_total_puntuaciones(puntuaciones)\n",
+    "promedio = calcular_promedio_puntuaciones(puntuaciones)\n",
+    "maxima = calcular_puntuacion_maxima(puntuaciones)\n",
+    "\n",
+    "print(f\"Total de puntuaciones: {total}\")\n",
+    "print(f\"Promedio de puntuaciones: {promedio:.2f}\")\n",
+    "print(f\"Puntuación máxima: {maxima}\")\n"
+   ]
+  }
+ ],
+ "metadata": {
+  "kernelspec": {
+   "display_name": "Python 3",
+   "language": "python",
+   "name": "python3"
+  },
+  "language_info": {
+   "name": "python",
+   "version": "3.12"
+  }
+ },
+ "nbformat": 4,
+ "nbformat_minor": 5
+}
